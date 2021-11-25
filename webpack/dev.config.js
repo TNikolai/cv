@@ -16,5 +16,6 @@ module.exports = {
     static: path.resolve("build"),
     devMiddleware: { publicPath: "/" },
   },
+
   devtool: "eval",
 };

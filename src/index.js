@@ -3,14 +3,16 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("app")
-);
+if (typeof document != "undefined") {
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById("app")
+  );
 
-// Hot Module Replacement API
-if (module.hot) {
-  module.hot.accept();
+  // Hot Module Replacement API
+  if (module.hot) {
+    module.hot.accept();
+  }
 }
