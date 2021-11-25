@@ -1,15 +1,11 @@
 # Webpack static generator with hot module replacement.
 
-This repository shows how to configure from scratch project with hot module replacement plugin and webpack static files generation.
-For view rendering used React jsx.
+This repository used for CV template support
 
-### It is lightweight project config which includes: 
-* babel
-* webpack
-* react
-* react-dom
-* react-router-dom
+### It is lightweight project config which includes:
 
-### Configs:
-Static files generation in [prod.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.config.js)
-Hot module replacement in [dev.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/dev.config.js)
+- babel
+- webpack
+- react
+- react-dom
+- react-router-dom
