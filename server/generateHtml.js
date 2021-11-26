@@ -1,19 +1,14 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
+
 import Routes from "../src/Routes";
 
-import React from "react";
-import ReactDOMServer from "react-dom/server";
-import { StaticRouter } from "react-router-dom";
-
-const render = (locals, ...rest) => {
+const render = (req) => {
   const context = {};
 
-  console.log({ locals, rest });
-
-  const html = ReactDOMServer.renderToString(
-    <StaticRouter location={locals.path} context={context}>
+  const html = renderToString(
+    <StaticRouter location={req.url} context={context}>
       <Routes />
     </StaticRouter>
   );
@@ -23,7 +18,7 @@ const render = (locals, ...rest) => {
   <head></head>
   <body>
     <div id="app">${html}</div>
-    <script src="bundle.js"></script>
+    <script type="module" src="bundle.js"></script>
   </body>
   `);
 };

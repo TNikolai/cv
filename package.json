@@ -2,9 +2,11 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "CV",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack/dev.config.js --env development",
+    "start-server":"nodemon --experimental-modules --es-module-specifier-resolution=node ./server/index",
+    "webpack-server":"webpack --config ./webpack/server.config.js",
     "build": "npm run build-static-html & npm run build-client",
     "build-static-html": "webpack --config ./webpack/prod.static.render.js && rm build/ignore.js",
     "build-client": "webpack --config ./webpack/prod.client.config.js"
@@ -28,6 +30,8 @@
     "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-dom-server": "0.0.5",
