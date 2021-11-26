@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import Routes from "./Routes";
 
 if (typeof document != "undefined") {
   ReactDOM.render(
     <BrowserRouter>
-      <App />
+      <Routes />
     </BrowserRouter>,
     document.getElementById("app")
   );

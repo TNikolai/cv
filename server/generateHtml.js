@@ -1,13 +1,20 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
-import App from "../src/App";
+import Routes from "../src/Routes";
 
-export default function render(locals) {
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import { StaticRouter } from "react-router-dom";
+
+const render = (locals, ...rest) => {
   const context = {};
+
+  console.log({ locals, rest });
+
   const html = ReactDOMServer.renderToString(
     <StaticRouter location={locals.path} context={context}>
-      <App />
+      <Routes />
     </StaticRouter>
   );
 
@@ -19,4 +26,6 @@ export default function render(locals) {
     <script src="bundle.js"></script>
   </body>
   `);
-}
+};
+
+export default render;

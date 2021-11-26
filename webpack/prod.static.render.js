@@ -4,13 +4,12 @@ const { rules, output } = require("./webpack.parts");
 module.exports = {
   mode: "production",
   entry: "./server/server.js",
-  stats: "minimal",
+  stats: "normal",
   module: { rules },
   output: output({ filename: "ignore.js", libraryTarget: "commonjs" }),
   plugins: [
     new StaticSiteGeneratorPlugin({
       crawl: true,
-      paths: ["/", "/*"],
       globals: { window: {} },
     }),
   ],
