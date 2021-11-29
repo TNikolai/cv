@@ -3,7 +3,7 @@ const { rules, output } = require("./webpack.parts");
 
 module.exports = {
   mode: "production",
-  entry: "./server/server.js",
+  entry: "./server/generateHtml.js",
   stats: "normal",
   module: { rules },
   output: output({ filename: "ignore.js", libraryTarget: "commonjs" }),

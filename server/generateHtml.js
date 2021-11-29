@@ -4,11 +4,11 @@ import { StaticRouter } from "react-router-dom";
 
 import Routes from "../src/Routes";
 
-const render = (req) => {
+const render = (locals) => {
   const context = {};
 
   const html = renderToString(
-    <StaticRouter location={req.url} context={context}>
+    <StaticRouter location={locals.path} context={context}>
       <Routes />
     </StaticRouter>
   );
