@@ -6,7 +6,7 @@ import Error from "./Error";
 const Routes = (props) =>
   console.log({ props, l: window.location }) || (
     <Switch>
-      <Route exact path="/" component={CV} />
+      <Route exact path="/cv" component={CV} />
       <Route exact path="/404" component={Error} />
       <Route component={Error} status="404" />
     </Switch>
