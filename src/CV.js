@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CV = () => (
   <div>
-    <Link to="/hello">TBD</Link>
+    <p> Hello world </p>
   </div>
 );
 
