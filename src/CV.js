@@ -1,11 +1,11 @@
 import React from "react";
+import Profile from "./components/Profile";
 import Styled from "./CV.styled";
 
 const CV = () => (
-  <div>
-    <Styled.p> Hello world </Styled.p>
-    <img src="hime.png" />
-  </div>
+  <Styled.Layout>
+    <Profile />
+  </Styled.Layout>
 );
 
 export default CV;

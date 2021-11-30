@@ -4,8 +4,16 @@ import { Link } from "react-router-dom";
 
 const Styled = {};
 
-Styled.Layout = styled.div`
-  margin: 0 30px;
+Styled.Image = styled.img`
+  color: lightblue;
+`;
+
+Styled.Position = styled.h2`
+  color: lightblue;
+`;
+
+Styled.Name = styled.h1`
+  color: lightblue;
 `;
 
 export default Styled;
