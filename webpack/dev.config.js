@@ -13,7 +13,10 @@ module.exports = {
     new HtmlWebpackPlugin({ template: path.resolve("public/index.html") }),
     new webpack.HotModuleReplacementPlugin(),
     new CopyPlugin({
-      patterns: [{ from: "public/assets", to: "" }],
+      patterns: [
+        { from: "public/assets", to: "" },
+        { from: "public/fonts", to: "" },
+      ],
     }),
   ],
   devServer: {

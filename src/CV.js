@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Styled from "./CV.styled";
 
 const CV = () => (
   <div>
-    <p> Hello world </p>
+    <Styled.p> Hello world </Styled.p>
     <img src="hime.png" />
   </div>
 );

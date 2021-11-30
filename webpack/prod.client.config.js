@@ -9,7 +9,10 @@ module.exports = {
   module: { rules },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "public/assets", to: "" }],
+      patterns: [
+        { from: "public/assets", to: "" },
+        { from: "public/fonts", to: "" },
+      ],
     }),
   ],
 };
