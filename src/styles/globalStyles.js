@@ -112,14 +112,6 @@ const globalStyles = ({ fontColor, backgroundColor }) => css`
     -webkit-user-select: none;
     -ms-user-select: none;
   }
-
-  #optanon {
-    direction: ltr;
-
-    #optanon-popup-wrapper {
-      right: auto;
-    }
-  }
 `;
 
 export default globalStyles;

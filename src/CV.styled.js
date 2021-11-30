@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 const Styled = {};
 
 Styled.p = styled.p`
-
-color: lightblue;
+  color: lightblue;
 `;
 
 export default Styled;
