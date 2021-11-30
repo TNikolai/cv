@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const { rules, output } = require("./webpack.parts");
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: path.resolve("public/index.html") }),
     new webpack.HotModuleReplacementPlugin(),
+    new CopyPlugin({
+      patterns: [{ from: "public/assets", to: "" }],
+    }),
   ],
   devServer: {
     static: path.resolve("build"),

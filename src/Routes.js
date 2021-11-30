@@ -5,7 +5,7 @@ import CV from "./CV";
 const Routes = (props) =>
   console.log({ props, l: window.location }) || (
     <Switch>
-      <Route component={CV} status="CV" />
+      <Route component={CV} />
     </Switch>
   );
 
