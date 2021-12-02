@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "./Contacts.styled";
-import Heading from "./Heading.styled";
+import Heading from "../Heading.styled";
 
 const contacts = [
   {
@@ -17,7 +17,7 @@ const contacts = [
 const Profile = () => (
   <Styled.Contacts>
     {contacts.map(({ href, children }) => (
-      <Styled.Anchor href={href}>
+      <Styled.Anchor href={href} key={href}>
         <Heading size="m">{children}</Heading>
       </Styled.Anchor>
     ))}

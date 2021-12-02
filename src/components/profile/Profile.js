@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "./Profile.styled";
-import Heading from "./Heading.styled";
+import Heading from "../Heading.styled";
 import Contacts from "./Contacts";
 import Socials from "./Socials";
 

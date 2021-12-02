@@ -1,4 +1,7 @@
 {
   "presets": ["@babel/preset-react"],
-  "plugins": ["@emotion", ["module-resolver", { "root": "." }]]
+  "plugins": [
+    "@emotion",
+    ["module-resolver", { "root": [".", "./src", "./src/components"] }]
+  ]
 }
