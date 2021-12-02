@@ -7,7 +7,7 @@ Styled.Socials = styled.div`
   justify-content: space-evenly;
   gap: 0.5rem 0.5rem;
   flex-wrap: wrap;
-  margin: 1rem;
+  padding: 2rem;
 `;
 
 Styled.Img = styled.img`

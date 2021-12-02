@@ -1,24 +1,21 @@
 import styled from "@emotion/styled";
-import React from "react";
-import { Link } from "react-router-dom";
 
 const Styled = {};
 
 Styled.Profile = styled.div`
-  background-color: green;
   display: flex;
 `;
 
 Styled.Image = styled.img`
-  width: 230px;
-  height: 260px;
+  width: 14.375rem;
+  height: 16.25rem;
 `;
 
 Styled.NameWraper = styled.div`
-  background-color: silver;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 1.3rem;
 `;
 
 Styled.Position = styled.h2``;

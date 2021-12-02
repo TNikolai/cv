@@ -22,6 +22,7 @@ module.exports = {
   devServer: {
     static: path.resolve("build"),
     devMiddleware: { publicPath: "/" },
+    port: 8082,
   },
 
   devtool: "eval",

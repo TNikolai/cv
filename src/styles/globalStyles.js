@@ -74,10 +74,6 @@ const globalStyles = ({ fontColor, backgroundColor }) => css`
     text-decoration: none;
   }
 
-  a.banner-policy-link {
-    color: var(--colors-orange-base);
-  }
-
   h1,
   h2,
   h3,
